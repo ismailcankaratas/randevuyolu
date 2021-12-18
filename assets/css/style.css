@@ -7,13 +7,16 @@
     --font: 'Inter', sans-serif;
     --font2: 'Poppins', sans-serif;
     --lightbg: #f8f9fa;
+    --border: #e6e6e6;
     --white: #fff;
     --box-shadow: 0 2px 4px rgb(0 0 20 / 8%), 0 1px 2px rgb(0 0 20 / 8%);
+    --red: #d0021b;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 body {
     font-family: var(--font);
@@ -234,58 +237,146 @@ Header Menu
 }
 .splide__pagination {
     position: absolute;
-    bottom: -.5rem!important;
+    bottom: -.8rem!important;
 }
 .splide__pagination__page {
+    padding: .5rem!important;
     background-color: var(--secondy)!important;
 }
 .splide__pagination .is-active {
     background-color: var(--primary)!important;
 }
 .splide__arrow {
-    display: none!important;
+    /* display: none!important; */
     background-color: var(--primary)!important;
     width: 2.5rem!important;
     height: 2.5rem!important;
+}
+.splide__arrow--prev {
+    left: -2rem!important;
+}
+.splide__arrow--next {
+    right: -2rem!important;
 }
 .splide__arrow svg {
     fill: var(--white)!important;
 }
 /*---------------------
-  BUSİNESS SECTİON
-
-.business-section {
-    background-color: var(--secondy);
-    color: var(--white);
-    padding: 2rem;
+  REGİSTER SECTİON
+-----------------------*/
+#register {
     display: flex;
+    width: 100;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-.business-section .business-content {
-    flex: 2;
-    padding-right: 3rem;
-}
-.business-section .business-content .business-title h3 {
-    font-size: 1.5rem;
     padding: 1rem;
+    background-color: var(--lightbg);
 }
-.business-section .business-content .business-title p {
+#register .register-title {
+    text-align: center;
+}
+#register .register-title h2 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+#register .register-wrapper form {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+#register .register-wrapper form .form-title{
+    text-align: center;
+    padding: .5rem 0;
+}
+#register .register-wrapper form .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+}
+#register .register-wrapper form .form-item #sifre-unuttum {
+    text-align: right;
+    text-decoration: underline;
+    color: var(--primary);
+}
+#register .register-wrapper form .form-item label {
+    font-weight: bold;
+}
+#register .register-wrapper form .form-item input {
+    border-radius: .3rem;
+    padding:  .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font2);
+    margin: .5rem 0;
+    background-color: var(--lightbg);
+}
+#register .register-wrapper form .form-error {
+    display: none;
+    border: 1px solid var(--red);
+    color: var(--red);
+    display: flex;
+    padding: .8rem 1rem;
+    border-radius: .3rem;
+    align-items: center;
+}
+#register .register-wrapper form .form-error p {
+    font-weight: bold;
+    padding-left: .5rem;
+}
+#register .register-wrapper form .form-btn {
+    display: flex;
+    padding: 0 2rem;
+
+}
+#register .register-wrapper form button {
+    flex: 1;
+    background-color: var(--primary);
+    border: none;
+    padding: .5rem 0;
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: .3rem;
+    font-family: var(--font2);
+    font-weight: bold;
+    cursor: pointer;
+}
+#info {
+    font-size: .8rem;
+    padding: .5rem 2rem;
     color: var(--color);
 }
-.business-section .button {
-    flex: .5;
-}
-.business-section .button a{
+#register .register-wrapper form .form-google {
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: var(--primary);
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    border-radius: 5rem;
+    margin: .5rem 4rem ;
+    border-radius: .3rem;
+    padding: .3rem;
+    border: solid 1px var(--border);
+    cursor: pointer;
+
 }
------------------------*/
+#register .register-wrapper form .form-google:hover {
+    background-color: var(--lightbg);
+}
+#register .register-wrapper form .form-google .logo {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .5rem;
+    display: flex;
+    border-radius: .3rem;
+}
+#register .register-wrapper form .form-google p {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+#register .register-wrapper form .form-google p span {
+    color: var(--color);
+}
+
 /*---------------------
   FOOTER SECTİON
 -----------------------*/
@@ -395,5 +486,10 @@ Header Menu
         padding: 1rem;
         cursor: pointer;
     }
-
+    /*---------------------
+    HİZMETLER SECTİON
+    -----------------------*/
+    #hizmetler .hizmetler-title p {
+        width: 100%;
+    }
 }

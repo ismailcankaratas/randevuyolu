@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Randevu">
-    <meta name="keywords" content="randevu">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Randevu</title>
+    <title>Register</title>
+    <!-- JavaScripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <!-- Css Styles -->
@@ -22,7 +21,7 @@
                 <a href="#">
                     <img src="assets/images/randevuLogo.png" alt="">
                     <h1>
-                        RandevuYolu <span>İşletme</span>
+                        Randevu Yolu
                     </h1>
                 </a>
             </div>
@@ -63,27 +62,56 @@
     </header>
     <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero-section">
-        <div class="hero-title">
-            <h2>İşletmeler İçin <strong>Randevu</strong> Sistemi</h2>
-            <p>
-                Randevunun kolay yolu <strong>Randevu Yolu</strong>
-            </p>
-        </div>
-        <div class="hero-buttons">
-            <div class="button">
-                <a href="#" class="active">7 GÜN ÜCRETSİZ DENEYİN</a>
+    <section id="register">
+
+        <div class="register-wrapper">
+            <div class="register-title">
+                <h2>Merhaba,</h2>
+                <p>Randevu Yolun'da hesap oluştur, sana en yakın işletmelerden kolayca randevu al!</p>
             </div>
-            <div class="button">
-                <a href="#">Ne Yapıyoruz?</a>
-            </div>
-        </div>
-        <div class="hero-banner">
-            <img src="assets/images/banner.png" alt="">
+            <form action="">
+                <div class="form-title">
+                    <h2>Üye Ol</h2>
+                </div>
+                <!-- <div class="form-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                    <p>
+                        Error
+                    </p>
+                </div> -->
+                <div class="form-item">
+                    <label>E-Posta</label>
+                    <input type="text">
+                </div>
+                <div class="form-item">
+                    <label>Şifre</label>
+                    <input type="password">
+                </div>
+                <div class="form-btn">
+                    <button type="submit">ÜYE OL</button>
+                </div>
+                <p id="info">Üye Ol’a basarak <b>Üyelik Koşulları</b>nı kabul ediyorum.</p>
+                <div class="form-google">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-google" viewBox="0 0 16 16">
+                            <path
+                                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                        </svg>
+                    </div>
+                    <p>
+                        Google
+                        <span>ile kaydol</span>
+                    </p>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- Hero End  -->
 
     <!-- Footer Section Begin -->
 
